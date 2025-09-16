@@ -1,0 +1,14 @@
+.nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav__link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav__link.active {
+    text-decoration: underline;
+  }
+  
