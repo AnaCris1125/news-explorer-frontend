@@ -1,0 +1,212 @@
+.search-section {
+    max-width: 320px;
+    width: 100%;
+    height: 480px;
+    color: #FFFFFF;
+}
+
+.search-title {
+    font-family: Roboto Slab;
+    font-weight: 400;
+    font-size: 32px;
+    leading-trim: NONE;
+    line-height: 40px;
+    letter-spacing: 0px;
+    margin-left: 19px;
+    margin-top: 30px;
+    margin-right: 19px;
+}
+
+.search-paragraph {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.search-form {
+    justify-content: center;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 40px;
+}
+
+.search-input {
+    width: 100%;
+    height: 56px;
+    angle: 0 deg;
+    opacity: 1;
+    border-width: 1px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    color: #B6BCBF;
+    margin-top: 120px;
+    padding-left: 15px;
+    box-sizing: border-box;
+
+}
+
+.search-button {
+    width: 100%;
+    height: 56px;
+    angle: 0 deg;
+    opacity: 1;
+    border-radius: 100px;
+    background-color: #2F71E5;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+
+.search-button:active {
+    background-color: #2A65CC;
+}
+
+
+@media screen and (min-width: 768px) {
+    .search-section {
+        max-width: 768px;
+        width: 100%;
+        height: 244px;
+        color: #FFFFFF;
+    }
+
+    .search-title {
+        font-family: Roboto Slab;
+        font-weight: 400;
+        font-size: 36px;
+        leading-trim: NONE;
+        line-height: 40px;
+        letter-spacing: 0px;
+        width: 385px;
+        height: 80px;
+        margin-top: 50px;
+        margin-left: 160px;
+        margin-right: 160px;
+        text-align: left;
+        angle: 0 deg;
+        opacity: 1;
+
+    }
+
+    .search-paragraph {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-left: 160px;
+        margin-right: 160px;
+    }
+
+
+    .search-input {
+        position: absolute;
+        width: 448px;
+        height: 56px;
+        border-width: 1px;
+        angle: 0 deg;
+        opacity: 1;
+        border-radius: 100px;
+        left: 160px;
+        
+
+    }
+
+    .search-button {
+        position: relative;
+        width: 160px;
+        height: 56px;
+        angle: 0 deg;
+        opacity: 1;
+        border-radius: 100px;
+        background-color: #2F71E5;
+        bottom: 30px;
+        top: 100px;
+        left: 432px;
+        cursor: pointer;
+    
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .search-section {
+        max-width: 1440px;
+        width: 100%;
+        height: 496px;
+        color: #FFFFFF;
+    }
+
+    .search-title {
+        font-family: Roboto Slab;
+        font-weight: 400;
+        font-size: 60px;
+        leading-trim: NONE;
+        line-height: 64px;
+        letter-spacing: 0px;
+        width: 608px;
+        height: 128px;
+        margin: 60px 416px;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        angle: 0 deg;
+        opacity: 1;
+
+    }
+
+    .search-paragraph {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 24px;
+        letter-spacing: 0px;
+        width: 608px;
+        height: 48px;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        margin-left: 416px;
+        margin-right: 416px;
+    
+    }
+
+
+    .search-input {
+        position: absolute;
+        width: 608px;
+        height: 64px;
+        border-width: 1px;
+        angle: 0 deg;
+        opacity: 1;
+        border-radius: 100px;
+        left: 416px;
+        top: 347px;
+
+    }
+
+    .search-button {
+        position: relative;
+        width: 168px;
+        height: 64px;
+        angle: 0 deg;
+        opacity: 1;
+        border-radius: 100px;
+        background-color: #2F71E5;
+        bottom: 30px;
+        top: 70px;
+        left: 840px;
+        cursor: pointer;
+    
+    }
+
+}

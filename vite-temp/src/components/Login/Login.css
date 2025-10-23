@@ -1,0 +1,249 @@
+.popupLogin {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    place-content: center;
+    z-index: 1000;
+
+}
+
+.popupLogin__opened {
+    display: grid;
+}
+
+.popupLogin__container {
+    width: 320px;
+    height: 560px;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 20px;
+
+}
+
+button {
+    border: none;
+}
+
+.popupLogin__close {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.popupLogin__close:hover {
+    opacity: 0.7;
+}
+
+.popupLogin__title {
+    margin-left: 16px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.popupLogin__form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.popupLogin__field {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #2F71E5;
+    margin-bottom: 10px;
+    margin-left: 16px;
+   
+
+}
+
+.popupLogin__input {
+    margin-left: 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #CCCCCC;
+    color: #2F71E5;
+
+}
+
+.popupLogin__input-error {
+    width: 100%;
+    height: 14px;
+    font-size: 11px;
+    margin-bottom: 30px;
+    margin-left: 16px;
+    background-color: white;
+    color: red;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: Inter;
+    font-weight: 400;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+
+.popupLogin__submit {
+    padding: 12px;
+    font-size: 16px;
+    background: #2f71e5;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.popupLogin__submit:hover {
+    background: #1a4dbd;
+}
+
+.popupLogin__submit_disabled {
+    opacity: 0.1;
+    pointer-events: none;
+   
+    
+}
+
+.popupLogin__text {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 20px;
+
+
+}
+
+.popupLogin__link {
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .popupLogin__container {
+        width: 430px;
+        height: 380px;
+        padding: 0px;
+
+    }
+
+    button {
+        border: none;
+    }
+
+    .popupLogin__close {
+        position: absolute;
+        top: 240px;
+        right: 120px;
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .popupLogin__title {
+        margin-left: 35px;
+        margin-top: 15px;
+
+    }
+
+
+    .popupLogin__field {
+        margin-bottom: 10px;
+        margin-left: 35px;
+        
+
+    }
+
+    .popupLogin__input {
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        border: none;
+        border-bottom: 2px solid #CCCCCC;
+        color: #2F71E5;
+
+    }
+
+    .popupLogin__input-error {
+        width: 359px;
+        height: 14px;
+        margin-bottom: 15px;
+        margin-left: 35px;
+        
+    
+    }
+
+    .popupLogin__submit {
+        padding: 12px;
+        font-size: 18px;
+        background: #2f71e5;
+        color: white;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        margin-top: 10px;
+        width: 288px;
+        height: 64px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+    .popupLogin__container {
+        width: 430px;
+        height: 380px;
+        padding: 0px;
+
+    }
+    .popupLogin__close {
+        position: absolute;
+        top: 410px;
+        right: 370px;
+        width: 40px;
+        height: 40px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .popupLogin__input-error {
+        width: 359px;
+        height: 14px;
+        margin-bottom: 15px;
+        margin-left: 35px;
+            
+    }
+
+
+}

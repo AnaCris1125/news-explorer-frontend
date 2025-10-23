@@ -1,0 +1,111 @@
+.news__card-list {
+    background-color: #F5F6F7;
+    margin: 0;
+}
+
+.news__card-list_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+    justify-items: center;
+    background-color: #F5F6F7;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    box-sizing: border-box;
+
+}
+
+.news__card-list_resultados {
+    font-family: Roboto Slab;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+
+}
+
+
+.ver-mas__button {
+    display: block;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+    width: 288px;
+    height: 56px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.ver-mas__button:hover {
+    opacity: 0.7;
+
+}
+
+@media screen and (min-width: 768px) {
+    .news__card-list_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+
+    }
+
+    .news__card-list_resultados {
+        font-family: Roboto Slab;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 34px;
+        letter-spacing: 0px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        
+    }
+
+    .ver-mas__button {
+        width: 240px;
+        height: 56px;
+        border-radius: 100px;
+        background-color: #FFFFFF;
+
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+    .news__card-list_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        
+
+    }
+
+    .news__card-list_resultados {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 40px;
+
+    }
+
+
+    .ver-mas__button {
+        width: 288px;
+        height: 64px;
+        border-radius: 100px;
+        background-color: #FFFFFF;
+
+
+    }
+
+}

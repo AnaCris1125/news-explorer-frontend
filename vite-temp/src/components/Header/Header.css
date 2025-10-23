@@ -1,15 +1,431 @@
+.header--dark {
+  background-color: #222;
+  color: #fff;
+}
+
+.header--dark .header-logo,
+.header--dark .header__nav-link,
+.header--dark .header__burger,
+.header--dark .header__user-name,
+.header--dark .header__logout,
+.header--dark .header__login {
+  color: #fff;
+}
+
+.header--light {
+  background-color: #fff;
+  color: #000;
+}
+
+.header--light .header-logo,
+.header--light .header__nav-link,
+.header--light .header__burger,
+.header--light .header__burger-close,
+.header--light .header__user-name,
+.header--light .header__logout,
+.header--light .header__login {
+  color: #000;
+}
+
+.header--light .header__burger-line {
+  border: 2px solid black;
+
+}
+
+
 .header {
-    background-color: #1c1c1c;
-    padding: 20px;
-    color: white;
+  max-width: 320px;
+  width: 100%;
+  height: 56px;
+  opacity: 1;
+
+
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+
+}
+
+.header-logo {
+  font-family: Roboto Slab;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  width: 117px;
+  height: 24px;
+  opacity: 1;
+  margin-left: 16px;
+  color: #FFFFFF;
+}
+
+.header__nav-desktop {
+  display: none;
+}
+
+.header__nav-mobile {
+  max-width: 320px;
+  width: 100%;
+  height: 174px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 56px;
+  gap: 20px;
+  background-color: #1A1B22;
+  z-index: 100;
+}
+
+
+.header__nav-mobile .header__nav-link {
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-family: Roboto;
+  cursor: pointer;
+  margin-left: 16px;
+  margin-top: 15px;
+}
+
+.logged-in .header__nav-mobile {
+  background-color: white;
+
+}
+
+.logged-in .header__nav-mobile .header__nav-link,
+.logged-in .header__nav-mobile .header__logout,
+.logged-in .header__nav-mobile .header__user-name {
+  color: #000000;
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-left: 16px;
+  width: 100px;
+  height: 30px;
+  gap: 30px;
+  border-radius: 100px;
+  border: 1px solid #FFFFFF;
+  vertical-align: middle;
+}
+
+
+.header__user-name {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 35px;
+  height: 24px;
+  angle: 0 deg;
+  opacity: 1;
+
+}
+
+.header__logout {
+  width: 24px;
+  height: 24px;
+  angle: 0 deg;
+  opacity: 1;
+  cursor: pointer;
+
+}
+
+
+
+.header__login {
+  width: 280px;
+  height: 56px;
+  border-radius: 100px;
+  background-color: #1A1B22;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+  cursor: pointer;
+  border: 1px solid #FFFFFF
+}
+
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 110;
+  margin-right: 16px;
+}
+
+.header__burger-close {
+  width: 30px;
+  height: 30px;
+}
+
+.header__burger-line {
+  width: 16px;
+  border: 2px solid #fff;
+  margin: 3px 0;
+}
+
+.header__image-line {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  border-bottom: 1px solid #545454;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .header {
+    max-width: 768px;
+    width: 100%;
+    height: 66px;
+    opacity: 1;
+
   }
-  
-  .header__content {
+
+  .header__container {
+    height: 66px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
-  
-  .header__logo {
-    font-size: 24px;
+
+
+  .header-logo {
+    font-family: Roboto Slab;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    width: 117px;
+    height: 24px;
+    opacity: 1;
+    margin-left: 40px;
+    color: #FFFFFF;
   }
+
+  .header__nav-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+  }
+
+  .header__nav-mobile {
+    display: none;
+
+  }
+
+  .header__nav-link {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #FFFFFF;
+
+  }
+
+  .header__nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .header__user {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    gap: 30px;
+    margin-right: 40px;
+    border-radius: 100px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    vertical-align: middle;
+
+
+  }
+
+
+  .header__user-name {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    width: 35px;
+    height: 24px;
+    opacity: 1;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+  }
+
+  .header__logout {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    cursor: pointer;
+
+
+  }
+
+  .header__login {
+    width: 152px;
+    height: 40px;
+    border-radius: 100px;
+    color: #FFFFFF;
+    margin-right: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+
+
+  }
+
+  .header__burger {
+    display: none;
+  }
+
+
+  .header__image-line {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    border-bottom: 1px solid #545454;
+    opacity: 0.7;
+    margin-top: 10px;
+  }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    max-width: 1440px;
+    width: 100%;
+    height: 80px;
+    opacity: 1;
+
+
+  }
+
+  .header__container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+  .header-logo {
+    font-family: Roboto Slab;
+    font-weight: 700px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    width: 200px;
+    height: 24px;
+    opacity: 1;
+
+
+  }
+
+  .header__nav-desktop {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__nav-mobile {
+    display: none;
+  }
+
+
+  .header__nav-link {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #FFFFFF;
+
+  }
+
+  .header__nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .header__user {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    gap: 30px;
+    margin-right: 40px;
+    border-radius: 100px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    vertical-align: middle;
+
+
+  }
+
+  .header__login {
+    font-size: 18px;
+    width: 176px;
+    height: 48px;
+    border-radius: 100px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    align-items: center;
+
+  }
+
+  .header__burger {
+    display: none;
+  }
+
+
+  .header__image-line {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    border-bottom: 1px solid #545454;
+    opacity: 0.7;
+    margin-top: 10px;
+  }
+
+}
