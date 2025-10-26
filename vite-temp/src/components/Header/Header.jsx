@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import React, { useState } from "react";
 import './Header.css';
 import closeIcon from "../../images/close.svg";
@@ -8,6 +8,7 @@ import iconoLogout from "../../images/icono-logout.png";
 
 function Header({ loggedIn, theme, onLogout, userName, onLoginClick, onRegisterClick }) {
   const location = useLocation();
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -36,8 +37,8 @@ function Header({ loggedIn, theme, onLogout, userName, onLoginClick, onRegisterC
         <nav className="header__nav-desktop">
           {loggedIn ? (
             <>
-              <a href="/" className="header__nav-link">Inicio</a>
-              <a href="/saved-news" className="header__nav-link">Artículos guardados</a>
+              <Link to="/" className="header__nav-link">Inicio</Link>
+              <Link to="/saved-news" className="header__nav-link">Artículos guardados</Link>
               <div className="header__user">
                 <span className="header__user-name">{userName}</span>
                 <img
@@ -50,7 +51,7 @@ function Header({ loggedIn, theme, onLogout, userName, onLoginClick, onRegisterC
             </>
           ) : (
             <>
-              <a href="/" className="header__nav-link">Inicio</a>
+              <Link to="/" className="header__nav-link">Inicio</Link>
               <button className="header__login" onClick={onLoginClick}>
                 Iniciar sesión
               </button>
@@ -63,8 +64,8 @@ function Header({ loggedIn, theme, onLogout, userName, onLoginClick, onRegisterC
           <div className="header__nav-mobile">
             {loggedIn ? (
               <>
-                <a href="/" className="header__nav-link" onClick={() => setIsMenuOpen(false)}>Inicio</a>
-                <a href="/saved-news" className="header__nav-link" onClick={() => setIsMenuOpen(false)}>Artículos guardados</a>
+                <Link to="/" className="header__nav-link" onClick={() => setIsMenuOpen(false)}>Inicio</Link>
+                <Link to="/saved-news" className="header__nav-link" onClick={() => setIsMenuOpen(false)}>Artículos guardados</Link>
                 <div className="header__user">
                   <span className="header__user-name">{userName}</span>
                   <img
@@ -77,7 +78,7 @@ function Header({ loggedIn, theme, onLogout, userName, onLoginClick, onRegisterC
               </>
             ) : (
               <>
-                <a href="/" className="header__nav-link" onClick={() => setIsMenuOpen(false)}>Inicio</a>
+                <Link to="/" className="header__nav-link" onClick={() => setIsMenuOpen(false)}>Inicio</Link>
                 <button className="header__login" onClick={onLoginClick}>
                   Iniciar sesión
                 </button>

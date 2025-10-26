@@ -178,7 +178,6 @@ function App() {
     setSavedCards(prev => prev.filter(a => a.title !== article.title));
   };
 
-
   return (
     <>
       {/* Contenido principal */}
